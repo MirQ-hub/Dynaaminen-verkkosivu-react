@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+import Content from './Content';
 
 function App() {
   return (
     <>
-    <h1>Otsikko</h1>
-    <p>Eka sivu</p>
+  <Header title="Minun sivut"/>
+  <Content/>
+  <Footer/>
     </>
   );
 }
+
 
 export default App;
