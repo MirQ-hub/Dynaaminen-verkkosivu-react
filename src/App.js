@@ -3,23 +3,20 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     <form onSubmit={laske}>
+   <h3>Valuuttalaskuri</h3>
+   <div>
+   <label>Eurot</label>
+   <input value={eurot} onChange={e => setEurot(e.target.
+value)} type='number'/>
+   </div>
+   <div>
+   <label>Punnat</label>
+   <output>{punnat}</output>
+   </div>
+   <button>Laske</button>
+ </form>
+  )
 }
 
 export default App;
